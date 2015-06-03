@@ -14,12 +14,10 @@ public class TestClass {
 
     @Test
     public void testEncrypted() {
-        long start = System.nanoTime();
         assertEquals("I love algorithms", new EncryptedMessageImpl().decryptEncryptedMessage("vrItommseIal vihack~416~Ilocveakgrithms he"));
         assertEquals("this is a secret.", new EncryptedMessageImpl().decryptEncryptedMessage("rc hscesi tcrest~410~thisaecr .rcese"));
         assertEquals("I love freckles.", new EncryptedMessageImpl().decryptEncryptedMessage("fl k.ccfsIolskv.~312~ .Ifrckslovelvo"));
         assertEquals("is this fun or what?", new EncryptedMessageImpl().decryptEncryptedMessage("o?uin uw?stutnfwat?~413~orwa? thfuisnnrsiu"));
-        System.out.println(System.nanoTime() - start);
     }
 
     @Test
