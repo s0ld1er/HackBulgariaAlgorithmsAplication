@@ -30,6 +30,8 @@ public class TestClass {
         assertEquals("264", new BracketProblemImpl().findSum("{125[2][(1)][3]125}"));
         assertEquals("500", new BracketProblemImpl().findSum("[125()125()125()125]"));
         assertEquals("1870", new BracketProblemImpl().findSum("{123[123(123)123(123)]23[123]2}"));
+        assertEquals("10", new BracketProblemImpl().findSum("{[2()3]}"));
+        assertEquals("14", new BracketProblemImpl().findSum("{[(2)3]}"));
         assertEquals("NO", new BracketProblemImpl().findSum("{125()125}"));
         assertEquals("NO", new BracketProblemImpl().findSum("{125[12]{125}[12]125}"));
         assertEquals("NO", new BracketProblemImpl().findSum("{125[12(123]125}"));
