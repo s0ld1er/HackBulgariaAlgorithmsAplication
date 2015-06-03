@@ -77,6 +77,7 @@ public class EncryptedMessageImpl {
             for (char k : indexesOfAlphabet.keySet()) {
                 if (indexesOfAlphabet.get(k) == originalMessageIndArr[i]) {
                     finalResult.append(k);
+                    break;
                 }
             }
         }
